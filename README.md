@@ -77,8 +77,11 @@ setDestroy(statu);
 
 ### 相关资料
 下载地址: [https://github.com/pyrinelaw/p-pull-refresh](https://github.com/pyrinelaw/p-pull-refresh)
+
 Demo: [http://pyrinelaw.github.io/pRefresh](http://pyrinelaw.github.io/pRefresh)
+
 Drag介绍文档: [http://www.w3schools.com/tags/ev_ondrag.asp](http://www.w3schools.com/tags/ev_ondrag.asp)
+
 作者: [Petrus.Law](https://github.com/pyrinelaw)
 
 ---
