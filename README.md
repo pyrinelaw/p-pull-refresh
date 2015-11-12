@@ -63,7 +63,7 @@ WAP端引入jquery与下拉插件即可，当然也可以引用zepto
     callbacks: {
     	pullStart: null,	// 拖动开始
     	start: null,	// 开始请求数据
-    	success: null,	// 数据请求成功
+    	success: null,	// 数据请求成功, 回调方法中提供参数response
     	error: null,	// 数据请求错误
     	end: null,	// 下拉流程结束
     }
