@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>p-pull-refresh</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<link rel="stylesheet" type="text/css" href="style/main.css" />
+
+</head>
+<body>
+
+<div class="container" id="container">
+	<div class="loading-warp">
+		<div class="box">
+			<div>
+				<img src="res/loading.gif" />
+				<span class="text">下拉开始刷新</span>
+			</div>
+		</div>
+	</div>
+	<ul class="list">
+		<li>颤抖吧，DOTA2西雅图TI5中国饱览2~5名</li>
+		<li>Sumail，十六岁的天才撑起EG大旗</li>
+		<li>国土无双，老将在凋零，但不是凋谢</li>
+		<li>3:0，我上我也行，撸啊撸的梗何时消退</li>
+		<li>未来属于谁！CTY，Sumei数据对比</li>
+		<li>3:0，我上我也行，撸啊撸的梗何时消退</li>
+	</div>
+</div>
+
+<div class="linkAdv">
+	<a href="index.html">Demo-1</a>
+	<a href="demo-2.html">Demo-2</a>
+	<a href="demo-3.html">Demo-3</a>
+</div>
+
+</body>
+
+<script type="text/javascript" src="script/lib/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="script/lib/touche.js"></script>
+<script type="text/javascript" src="script/p-pull-refresh.js"></script>
+
+<script type="text/javascript">
+	
+	var $statu = $('.loading-warp .text');
+
+	var pullRefresh = $('.container').pPullRefresh({
+		$el: $('.container'),
+		$loadingEl: $('.loading-warp'),
+		sendData: null,
+		url: 'test.php',
+		callbacks: {
+			pullStart: function(){
+				$statu.text('松开开始刷新');
+			},
+			start: function(){
+				$statu.text('数据刷新中···');
+			},
+			success: function(response){
+				$statu.text('数据刷新成功！');
+			},
+			end: function(){
+				$statu.text('下拉刷新结束');
+			},
+			error: function(){
+				$statu.text('找不到请求地址,数据刷新失败');
+			}
+		}
+	});
+
+	// pullRefresh.setDestroy(true);
+	
+</script>
+
+</html>

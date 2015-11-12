@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/**
+ * @authors petrus.law (you@example.org)
+ * @date    2015-07-20 15:06:33
+ * @version 基础样式
+ */
+
+*{ margin: 0; padding: 0; }
+
+html{ font-size: 10px; }
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+
+.container{ overflow: hidden; min-height: 100%; background: rgba(0, 0, 0, 0.1); }
+
+.loading-warp{ display: table; width: 100%; margin-top: -5.8rem; }
+.loading-warp .box{ width: 100%; padding-top: 1rem; padding-bottom: 1rem;
+ display: table-cell; text-align: center; vertical-align: middle; }
+.loading-warp .box img{ display: block; width: 2rem; height: 2rem; margin: 0 auto; }
+.loading-warp .box .text{ display: block; text-align: center; font-size: 0.5rem; 
+	line-height: 0.5rem; opacity: 0.7; margin-top: 1.4rem; }
+
+.nav{ background: #2285DE; padding: 0.6rem; line-height: 1.4rem; font-size: 1.4rem; font-weight: bold;
+color: #FFF; padding-top: 0.6rem; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.list{ }
+.list li{ color: #63A0D7; padding: 0.8rem 1rem; background: #FFF; list-style: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.linkAdv{ width: 100%; position: fixed; bottom: 0; text-align: center; font-size: 1.2rem; }
+.linkAdv a{ display: inline-block; margin: 0.6rem 1rem; }
