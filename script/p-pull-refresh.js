@@ -14,6 +14,7 @@
 			$el: $('body'),	// 默认容器
 			$loadingEl: null,	// 刷新提示容器
 			autoHide: true,	// 自动隐藏
+			url: undefined,	// 请求数据地址
 			sendData: null,	// 获取下拉刷新发送数据，动态传入，使用function返回数据
 			// 触发拖动像素距离(触发灵敏度),
 			// 浏览器中下拉默认事件一旦触发后，就不能再通过冒泡阻止此事件。

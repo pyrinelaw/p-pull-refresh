@@ -50,6 +50,8 @@ WAP端引入jquery与下拉插件即可，当然也可以引用zepto
     $loadingEl: null,
     // 是否自动隐藏
     autoHide: true, 
+    // 请求数据地址
+    url: undefined,
     // 获取下拉刷新发送数据，可以使用静态数据，也可以使用使用function动态传入数据
     sendData: null,	    
     // 触发拖动像素距离(触发灵敏度),
