@@ -47,8 +47,10 @@ WAP端引入jquery与下拉插件即可，当然也可以引用zepto
      // 触摸容器，默认为body
     $el: $('body'),	   
     // 刷新提示容器
+    // 提示容器中的内容随自己喜欢自定义
     $loadingEl: null,
     // 是否自动隐藏
+    // 设置为自动隐藏后，数据请求成功，如需回到初始状态，需要执行reset方法
     autoHide: true, 
     // 请求数据地址
     url: undefined,
@@ -71,8 +73,8 @@ WAP端引入jquery与下拉插件即可，当然也可以引用zepto
 ```
 ## 提供方法
 ```javascript
-// 初始化
-reset();
+// 初始化，isAnim: 是否需要动画效果
+reset(isAnim);
 // 设置销毁状态,statu设置为false后下拉刷新将不再生效，设置为true后将再次生效
 setDestroy(statu);
 ```
